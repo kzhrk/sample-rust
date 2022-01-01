@@ -20,4 +20,20 @@ fn main() {
   // remainder
   let remainder = 43 % 5;
   println!("remainder: {}", remainder);
+
+  // tuple type
+  let tup = (500, 6.4, 1);
+
+  let (x, y, z) = tup;
+
+  println!("The value of x,y,z is: {}, {}, {}", x, y, z);
+
+  // get tuple value like javascript array
+  let tmp2: (i32, f64, u8) = (500, 6.4, 1);
+
+  let tmp2_0 = tmp2.0;
+  let tmp2_1 = tmp2.1;
+  let tmp2_2 = tmp2.2;
+
+  println!("tmp2: {}, {}, {}", tmp2_0, tmp2_1, tmp2_2);
 }

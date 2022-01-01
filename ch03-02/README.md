@@ -54,3 +54,20 @@ boolean の型宣言は `bool` を使う。
 ### charcter
 
 文字列の型宣言は存在しない？
+
+### tuple type
+
+JavaScript の配列のような Tuple 型宣言ができる。  
+複数型が含まれた変数から、丸括弧で各変数を取得することができる。
+
+```
+let tup = (500, 6.4, 1);
+let (x, y, z) = tup;
+```
+
+tuple 内の値は JavaScript の配列の参照のように、index 番号をドットでつなげることで参照可能になる。
+
+```
+let tmp2: (i32, f64, u8) = (500, 6.4, 1);
+let tmp2_0 = tmp2.0;
+```
