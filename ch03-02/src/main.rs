@@ -36,4 +36,15 @@ fn main() {
   let tmp2_2 = tmp2.2;
 
   println!("tmp2: {}, {}, {}", tmp2_0, tmp2_1, tmp2_2);
+
+  // sample array
+  let arr = [1, 2, 3, 4, 5];
+  println!("arr[0] {}", arr[0]);
+  println!("arr[1] {}", arr[1]);
+
+  // Arrayの型指定
+  let arr2: [i32; 3];
+  // [1, 1, 1]を代入
+  arr2 = [1; 3];
+  println!("arr2[0] {}", arr2[0]);
 }

@@ -71,3 +71,12 @@ tuple 内の値は JavaScript の配列の参照のように、index 番号を�
 let tmp2: (i32, f64, u8) = (500, 6.4, 1);
 let tmp2_0 = tmp2.0;
 ```
+
+### Array
+
+複数の型を指定できるものとして、Tuple の他に Array が存在する。  
+Tuple との違いは、Array はすべて同じ型の複数型になることだ。  
+TypeScript の Array 型とほぼ同じ扱いになる。
+
+Rust では Array 内の存在しない index 番号を参照しようとするとランタイムエラーが発生する。  
+これは Rust がメモリセーフな設計になっている証左でもある。
