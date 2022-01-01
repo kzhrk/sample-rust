@@ -35,3 +35,10 @@ integer 型は数値だけではなく、suffix をつけることで様々な�
 | Octal           | 0o77        |
 | Binary          | 0b1111_0000 |
 | Byte (u8 only)  | b'A'        |
+
+### floating point numbers
+
+浮動小数点の型は `f32` と `f64` が存在する。  
+integer の arch 型と同じく、コンピュータのアーキテクチャによって型が決定される。  
+デフォルトの浮動小数点の型は `f64` になっている。
+浮動小数点は IEEE-754 に準拠している。
