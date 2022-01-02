@@ -2,6 +2,9 @@ fn main() {
   another_function(5);
   print_labeled_measurement(5, 'h');
   fn_bodies_contain_logic();
+
+  let five = five();
+  println!("The value of five is: {}", five);
 }
 
 fn another_function(x: i32) {
@@ -17,4 +20,8 @@ fn fn_bodies_contain_logic() {
     x + 1
   };
   println!("The value of y is: {}", y);
+}
+
+fn five() -> i32 {
+  5
 }
