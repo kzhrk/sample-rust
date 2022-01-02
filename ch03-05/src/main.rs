@@ -17,6 +17,7 @@ fn main() {
   return_values_from_loop();
   sample_while();
   sample_for_in();
+  sample_collection_rev();
 }
 
 fn sample_loop() {
@@ -73,4 +74,11 @@ fn sample_for_in() {
   for element in a {
     println!("the value is: {}", element);
   }
+}
+
+fn sample_collection_rev() {
+  for number in (1..4).rev() {
+    println!("{}!", number);
+  }
+  println!("LIFTOFF!!!");
 }

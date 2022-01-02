@@ -17,3 +17,4 @@ https://doc.rust-lang.org/book/ch03-05-control-flow.html
 ### for in
 
 - Array を `for element in collection {}` で for loop させることができる
+- Array には配列の順番を反転させる `.rev()` メソッドが存在する
