@@ -15,6 +15,7 @@ fn main() {
 
   sample_loop();
   return_values_from_loop();
+  sample_while();
 }
 
 fn sample_loop() {
@@ -51,4 +52,16 @@ fn return_values_from_loop() {
   };
 
   println!("The result is {}", result);
+}
+
+fn sample_while() {
+  let mut number = 3;
+
+  while number != 0 {
+    println!("{}!", number);
+
+    number -= 1;
+  }
+
+  println!("LIFTOFF!!!");
 }
