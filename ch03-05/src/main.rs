@@ -16,6 +16,7 @@ fn main() {
   sample_loop();
   return_values_from_loop();
   sample_while();
+  sample_for_in();
 }
 
 fn sample_loop() {
@@ -64,4 +65,12 @@ fn sample_while() {
   }
 
   println!("LIFTOFF!!!");
+}
+
+fn sample_for_in() {
+  let a = [10, 20, 30, 40, 50];
+
+  for element in a {
+    println!("the value is: {}", element);
+  }
 }

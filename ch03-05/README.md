@@ -13,3 +13,7 @@ https://doc.rust-lang.org/book/ch03-05-control-flow.html
 - loop 文は `'counting_up:` のようにシングルクォートと文字列でラベルを付けることができる
 - break で break する loop のラベルを指定することができる
 - break に value を渡すことで、loop の結果を変数に渡すことが可能になる
+
+### for in
+
+- Array を `for element in collection {}` で for loop させることができる
