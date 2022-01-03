@@ -1,6 +1,17 @@
 fn main() {
   sample_string();
   string_both_equal_sample();
+
+  let s1 = gives_ownership();
+
+  let s2 = String::from("hello");
+
+  let s3 = takes_and_gives_back(s2);
+
+  println!("s1: {}", s1);
+  // s2はtakes_and_gives_backで参照が切れているのでprintするとコンパイルエラーになる
+  // println!("s2: {}", s2);
+  println!("s3: {}", s3);
 }
 
 fn sample_string() {
@@ -27,4 +38,13 @@ fn string_both_equal_sample() {
 
   println!("{} world!", s1);
   println!("{} world!", s2);
+}
+
+fn gives_ownership() -> String {
+  let some_string = String::from("yours");
+  some_string
+}
+
+fn takes_and_gives_back(a_string: String) -> String {
+  a_string
 }
