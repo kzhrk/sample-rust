@@ -12,6 +12,9 @@ fn main() {
   // s2はtakes_and_gives_backで参照が切れているのでprintするとコンパイルエラーになる
   // println!("s2: {}", s2);
   println!("s3: {}", s3);
+
+  let (s4, len) = calculate_length(s3);
+  println!("The length of '{}' is {}.", s4, len);
 }
 
 fn sample_string() {
@@ -47,4 +50,10 @@ fn gives_ownership() -> String {
 
 fn takes_and_gives_back(a_string: String) -> String {
   a_string
+}
+
+fn calculate_length(s: String) -> (String, usize) {
+  let length = s.len(); // len() returns the length of a String
+
+  (s, length)
 }
