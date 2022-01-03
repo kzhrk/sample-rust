@@ -23,7 +23,8 @@ fn sample_string() {
 //                        ^^ value borrowed here after move
 fn string_both_equal_sample() {
   let s1 = String::from("hello");
-  let s2 = s1;
+  let s2 = s1.clone();
 
-  println!("{}, world!", s1);
+  println!("{} world!", s1);
+  println!("{} world!", s2);
 }
